@@ -1,0 +1,111 @@
+$primary: #fea328;
+$default: #f0f3f6;
+$dark: #505f79;
+$light: #d3d8dd;
+
+.btn {
+  padding: 12px 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-default {
+  background: $default;
+  color: $dark;
+}
+.btn-transparent {
+  background: transparent;
+  color: $dark;
+}
+.btn-primary {
+  background: $primary;
+  color: white;
+}
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+  }
+  .btn-transparent {
+  }
+}
+
+
+.base-modal {
+  font-family: Sans-serif;
+  width: 100%;
+  max-width: 489px;
+  min-height: 352px;
+  border: 1px solid $default;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+
+  box-shadow: 0px 32px 48px -16px #B3BAC5;
+  
+
+  &__content {
+    display: flex;
+    padding: 24px;
+    height: 100%;
+    flex: 1;
+
+    .filter-shop {
+      padding: 0px 12px;
+      width: 50%;
+      border-right: 1px solid $default;
+      .search {
+        input[type="search"] {
+          &::placeholder {
+          }
+        }
+      }
+      .search-result {
+        input[type="radio"] {
+        }
+        label {
+        }
+      }
+    }
+
+
+    .filter-periodic {
+      padding: 0px 12px;
+      width: 50%;
+      .filter-periodic__default-ranges {
+        .periodic-range {
+          input[type="radio"] {
+          }
+          label {
+          }
+        }
+      }
+      .custom-range {
+        input[type="date"] {
+        }
+      }
+    }
+    .base-modal__filter-periodic {
+
+    }
+  }
+
+  &__actions {
+    border-top: 1px solid $default;
+    padding: 24px;
+    display: flex;
+
+    &-start {
+
+    }
+
+    &-end {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end; 
+    }
+  }
+}
